@@ -1,0 +1,335 @@
+/*Yazı fontu ekleme*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto&family=Roboto+Serif&display=swap');
+
+*{
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box; /*Padding verdigimde yapı bozulmuyor*/
+   font-family: 'poppins',sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto; /*yukarıdan ve aşagıdan 20 sag sol auto*/
+    align-items: center;
+    padding: 20px 0;
+}
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+.navbar-left-logo{
+font-family: 'indie flower';
+text-decoration: none;
+line-height: 64px;
+font-size: 44px;
+color: rgb(0, 128, 0);
+}
+.navbar-left-logo:hover{
+    transform: scale(1.1);
+    transition: ease 0.5s; /* Gerçekleşme hızı */
+}
+.navbar-left-menu{
+display: flex;
+gap: 20px;
+align-items: center;
+}
+.navbar-left-menu a{
+    text-decoration: none;
+    font-size: 18px;
+    color: gray;
+}
+.navbar-left-menu a:nth-child(1){
+    color: #000;
+    font-weight: 700;
+}
+.navbar-left-menu a:hover{
+    color: green;
+}
+.navbar-right{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.navbar-right i{
+    cursor: pointer;
+    font-size: 22px;
+}
+.navbar-right i:hover{
+    color: gray;
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+.banner{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #c1dcdc;
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 40px;
+    padding: 40px 0 40px 50px;
+    z-index: 2;
+}
+
+.banner-left h1{
+    font-weight: 800px;
+    font-size: 64px;
+    line-height: 64px;
+    width: 480px;
+}
+.banner-left-content{
+    display: flex;
+    gap: 50px;
+}
+.contents:first-child{
+    border-right: 1px solid black;
+    padding-right: 50px;
+}
+.contents p{
+    font-size: 32px;
+    font-weight: 600;
+}
+.contents span{
+    font-size: 18px;
+}
+.banner-left-search{
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    border-radius: 15px;
+}
+.banner-left-search input{
+    border: none;
+    outline: none; /* focuslandıktan sonraki borderı kaldırdı*/
+    width: 80%;
+    font-size: 18px;
+}
+.banner-left-search i{
+    background-color: #c1dcdc;
+    padding: 8px 10px;
+    border-radius: 18px;
+}
+.banner-right{
+width: 50%;
+position: relative;
+}
+.banner-right img{
+position: absolute;
+bottom: 0;
+transform: scaleX(-1); /*aynalama ile yansıtma*/
+}
+.banner-right-bg{
+    position: absolute;
+    background-color: gray;
+    width: 400px;
+    height: 360px;
+    bottom: 0;
+    right: 10%;
+    border-radius: 50% 20% 0 50%;
+}
+/*Product*/
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+.product-title{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
+ text-align: center;
+ margin-top: 40px;
+}
+.product-title .more{
+    margin-bottom: 20px;
+}
+.more{
+    background-color: #c1dcdc;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.more:hover{
+    box-shadow: 0 0 5px gray;
+}
+.product-card{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.product-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+.product-cards img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.product-cards p{
+    font-size: 22px;
+    font-weight: 600px;
+    margin-top: 10px;
+}
+.product-cards span{
+    font-size: 18px;
+    color: grey;
+}
+/*About*/
+.about{
+display: flex;
+flex-direction: column;
+gap: 20px;
+background-color: rgba(134, 126, 126, 0.276);
+width: 100%;
+padding: 20px 0;
+}
+.about-title{
+    text-align: center;
+}
+.about-title h1{
+    font-size: 32px;
+}
+.about-title p{
+    font-size: 18px;
+    color: gray;
+}
+.about-card{
+display: flex;
+align-items: center;
+}
+.about-cards{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.about-cards i{
+    font-size: 42px;
+    background-color: #c1dcdc;
+    border-radius: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.about-cards p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about-cards span{
+    text-align: center; /*Kendi içinde ortalar*/
+
+    /* Verilen satır sayısına göre tasan kısmın sonuna ... ekleme*/
+    display: -webkit-box;
+    overflow: hidden; /*Taşan kısmı gizleme*/
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /*satır sayısı*/
+
+}
+/*FOOTER*/
+.footer{
+display: flex;
+flex-direction: row;
+background-color: #c1dcdc;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+}
+.footer-left{
+padding: 20px 80px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.footer-left h1{
+    font-family: 'indie flower';
+}
+.footer-left p{
+    font-size: 18px;
+    color: #000;
+}
+.footer-left-social{
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+}
+.footer-left-social a{
+color: #566060;
+border: 1px solid rgba(134, 126, 126, 0.655);
+padding: 20px;
+border-radius: 50%;
+}
+.footer-left-social a:hover{
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+.footer-right{
+display: flex;
+gap: 10px;
+}
+.footer-right ul li{
+    list-style-type: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.footer-right ul li:first-child{
+    font-weight: 800;
+}
+/*responsive ayarlar*/
+@media screen and (max-width:900px){ /*0-900 px arasında bu görevleri görür*/
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar-right{
+        width: 100%;
+        justify-content: end;
+    }
+    .banner-left{
+        width: 100%;
+    }
+    .banner-left h1 {
+        background-color: white;
+        opacity: 0.8;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 35px;
+        width: 100%;
+      }
+      .banner-left-content{
+        background-color: white;
+        opacity: 0.8;
+        border-radius: 20px;
+        padding: 10px;
+      }
+      .footer{
+        flex-direction: column;
+      }
+      .footer-right{
+        display: none;
+      }
+      .footer-left{
+        align-items: center;
+        gap: 20px;
+      }
+    
+}
